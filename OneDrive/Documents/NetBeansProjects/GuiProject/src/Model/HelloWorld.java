@@ -11,7 +11,7 @@ package Model;
 public class HelloWorld {
     public static int a=10;
     public static double d=2.0;
-    public static float f=4;
+    public static float fl=4;
     public static String s="ABC";
     public static  boolean b=true;
     public static char c='a'; 
@@ -21,12 +21,12 @@ public class HelloWorld {
     {
         System.out.println(a);
         System.out.println(d);
-        System.out.println(f);
+        System.out.println(fl);
         System.out.println(s);
         System.out.println(b);
         System.out.println(c);
         for(int i=0; i<2;i++){            //printing the array
-            System.out.println(arr[i]);
+           System.out.println(arr[i]);
         }
 }
     

@@ -404,7 +404,6 @@ public class NewJFrame extends javax.swing.JFrame {
        display();
         
         
-        
     }//GEN-LAST:event_SUBMITActionPerformed
 
     private void DispNameMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_DispNameMouseClicked

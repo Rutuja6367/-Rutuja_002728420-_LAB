@@ -539,7 +539,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
+            public void run(){
                 new NewJFrame().setVisible(true);
                 new NewJFrame().setVisible(true);
             }

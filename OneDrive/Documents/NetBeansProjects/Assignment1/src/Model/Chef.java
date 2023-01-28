@@ -10,41 +10,41 @@ import Model.Recipe;
  * @author rutuj
  */
 public class Chef {
-   private  String fname;
-   private String lname;
-   String username;
+     String firstName;
+    String lastName;
+   String userName;
    Contact contact;
    Recipe recipe;
   
    Recipe title;
-   Recipe servings;
-   Recipe gluten;
-   Recipe level;
-   Recipe number;
-   Recipe category;
-   Recipe descp;
-   Recipe pic;
+   Recipe number_of_Servings;
+   Recipe glutenFree;
+   Recipe difficultyLevel;
+   Recipe number_of_Ingridients;
+   Recipe foodCategory;
+   Recipe description;
+   Recipe recipePicture;
   
-   Contact id;
+   Contact emailId;
    Contact phone;
    
    
    public Chef(){
-       this.fname="";
-       this.lname="";
-       this.username="";
+       this.firstName="";
+       this.lastName="";
+       this.userName="";
        
        this.title = new Recipe();
-       this.servings = new Recipe();
-       this.gluten = new Recipe();
-       this.level = new Recipe();
-       this.number = new Recipe();
-       this.category = new Recipe();
-       this.descp = new Recipe();
-       this.pic = new Recipe();
+       this.number_of_Servings = new Recipe();
+       this.glutenFree = new Recipe();
+       this.difficultyLevel = new Recipe();
+       this.number_of_Ingridients = new Recipe();
+       this.foodCategory = new Recipe();
+       this.description = new Recipe();
+       this.recipePicture = new Recipe();
        
        this.phone = new Contact();
-       this.id = new Contact();
+       this.emailId = new Contact();
    }
    
    public Contact getContact(){
@@ -59,106 +59,106 @@ public class Chef {
        return recipe;
    }
 
-    public String getFname() {
-        return fname;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public String getLname() {
-        return lname;
+    public String getLastName() {
+        return lastName;
     }
 
-    public String getUsername() {
-        return username;
+    public String getUserName() {
+        return userName;
     }
 
     public Recipe getTitle() {
         return title;
     }
 
-    public Recipe getServings() {
-        return servings;
+    public Recipe getNumber_of_Servings() {
+        return number_of_Servings;
     }
 
-    public Recipe getGluten() {
-        return gluten;
+    public Recipe getGlutenFree() {
+        return glutenFree;
     }
 
-    public Recipe getLevel() {
-        return level;
+    public Recipe getDifficultyLevel() {
+        return difficultyLevel;
     }
 
-    public Recipe getNumber() {
-        return number;
+    public Recipe getNumber_of_Ingridients() {
+        return number_of_Ingridients;
     }
 
-    public Recipe getCategory() {
-        return category;
+    public Recipe getFoodCategory() {
+        return foodCategory;
     }
 
-    public Recipe getDescp() {
-        return descp;
+    public Recipe getDescription() {
+        return description;
     }
 
-    public Recipe getPic() {
-        return pic;
+    public Recipe getRecipePicture() {
+        return recipePicture;
     }
 
     
 
-    public void setFname(String fname) {
-        this.fname = fname;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
-    public void setLname(String lname) {
-        this.lname = lname;
+    public void setLastName(String LastName) {
+        this.lastName = LastName;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
     public void setTitle(Recipe title) {
         this.title = title;
     }
 
-    public void setServings(Recipe servings) {
-        this.servings = servings;
+    public void setNumber_of_Servings(Recipe number_of_Servings) {
+        this.number_of_Servings = number_of_Servings;
     }
 
-    public void setGluten(Recipe gluten) {
-        this.gluten = gluten;
+    public void setGlutenFree(Recipe glutenFree) {
+        this.glutenFree = glutenFree;
     }
 
-    public void setLevel(Recipe level) {
-        this.level = level;
+    public void setDifficultyLevel(Recipe difficultyLevel) {
+        this.difficultyLevel = difficultyLevel;
     }
 
-    public void setNumber(Recipe number) {
-        this.number = number;
+    public void setNumber_of_Ingridients(Recipe number_of_Ingridients) {
+        this.number_of_Ingridients = number_of_Ingridients;
     }
 
-    public void setCategory(Recipe category) {
-        this.category = category;
+    public void setFoodCategory(Recipe foodCategory) {
+        this.foodCategory = foodCategory;
     }
 
-    public void setDescp(Recipe descp) {
-        this.descp = descp;
+    public void setDescription(Recipe description) {
+        this.description = description;
     }
 
-    public void setPic(Recipe pic) {
-        this.pic = pic;
+    public void setRecipePicture(Recipe recipePicture) {
+        this.recipePicture = recipePicture;
     }
 
-    public Contact getId() {
-        return id;
+    public Contact getEmailId() {
+        return emailId;
     }
 
     public Contact getPhone() {
         return phone;
     }
 
-    public void setId(Contact id) {
-        this.id = id;
+    public void setEmailId(Contact emailId) {
+        this.emailId = emailId;
     }
 
     public void setPhone(Contact phone) {

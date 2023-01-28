@@ -9,75 +9,77 @@ package Model;
  * @author rutuj
  */
 public class Recipe {
-    String title;
-    Long no_of_servings;
-    boolean gluten;
-    float level;
-    long no_of_ingredients;
-    String category;
-    String descp;
+  public  String recipeTitle;
+    Long number_of_Servings;
+    boolean glutenFree;
+    float difficultyLevel;
+    long number_of_Ingridients;
+    String foodCategory;
+    String description;
     //picture
    
     public Recipe(){
-        this.title ="";
-        this.category = "";
-        this.descp="";
+        this.recipeTitle ="";
+        this.foodCategory = "";
+        this.description="";
     }
 
-    public String getTitle() {
-        return title;
+    public String getRecipeTitle() {
+        return recipeTitle;
     }
 
-    public Long getNo_of_servings() {
-        return no_of_servings;
+    public Long getNumber_of_Servings() {
+        return number_of_Servings;
     }
 
-    public boolean isGluten() {
-        return gluten;
+    public boolean isGlutenFree() {
+        return glutenFree;
     }
 
-    public float getLevel() {
-        return level;
+    public float getDifficultyLevel() {
+        return difficultyLevel;
     }
 
-    public long getNo_of_ingredients() {
-        return no_of_ingredients;
+    public long getNumber_of_Ingridients() {
+        return number_of_Ingridients;
     }
 
-    public String getCategory() {
-        return category;
+    public String getFoodCategory() {
+        return foodCategory;
     }
 
-    public String getDescp() {
-        return descp;
+    public String getDescription() {
+        return description;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setRecipeTitle(String recipeTitle) {
+        this.recipeTitle = recipeTitle;
     }
 
-    public void setNo_of_servings(Long no_of_servings) {
-        this.no_of_servings = no_of_servings;
+    public void setNumber_of_Servings(Long number_of_Servings) {
+        this.number_of_Servings = number_of_Servings;
     }
 
-    public void setGluten(boolean gluten) {
-        this.gluten = gluten;
+    public void setGlutenFree(boolean glutenFree) {
+       
+        this.glutenFree = true;
+        }
+    
+
+    public void setDifficultyLevel(float difficultyLevel) {
+        this.difficultyLevel = difficultyLevel;
     }
 
-    public void setLevel(float level) {
-        this.level = level;
+    public void setNumber_of_Ingridients(long number_of_Ingridients) {
+        this.number_of_Ingridients = number_of_Ingridients;
     }
 
-    public void setNo_of_ingredients(long no_of_ingredients) {
-        this.no_of_ingredients = no_of_ingredients;
+    public void setFoodCategory(String foodCategory) {
+        this.foodCategory = foodCategory;
     }
 
-    public void setCategory(String category) {
-        this.category = category;
-    }
-
-    public void setDescp(String descp) {
-        this.descp = descp;
+    public void setDescription(String description) {
+        this.description = description;
     }
     
 }

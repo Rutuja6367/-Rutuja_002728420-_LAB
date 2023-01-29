@@ -265,6 +265,11 @@ public class RecipeForm extends javax.swing.JFrame {
                 jTextField12ActionPerformed(evt);
             }
         });
+        jTextField12.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                jTextField12KeyReleased(evt);
+            }
+        });
 
         jTextField13.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
@@ -591,39 +596,32 @@ public class RecipeForm extends javax.swing.JFrame {
         
         Temp temp1 = new Temp();
         temp1.saveContact(this.chef.getContact());
-
-        //getGender();
-        final String EMPTY_STRING = " ";
-        String email=jTextField12.getText();
-        if(!(email.contains("@"))||!((email.endsWith(".com")) ||(email.endsWith(".edu")))||email.isBlank())
-        {
-            JOptionPane.showMessageDialog(this, "Please Enter Correct Email");
-        }
-        else { if(jTextField1.getText().equals(EMPTY_STRING) ||jTextField2.getText().equals(EMPTY_STRING) || jTextField3.getText().equals(EMPTY_STRING) || jTextField4.equals(EMPTY_STRING) || jTextField5.getText().equals(EMPTY_STRING)|| jTextField6.getText().equals(EMPTY_STRING)|| jTextField7.getText().equals(EMPTY_STRING)|| jTextField8.getText().equals(EMPTY_STRING)|| jTextField9.getText().equals(EMPTY_STRING)|| jTextField10.getText().equals(EMPTY_STRING)|| jTextField12.getText().equals(EMPTY_STRING)||jTextField13.getText().equals(EMPTY_STRING))
-            {
-                JOptionPane.showMessageDialog(this, "INCOMPLETE DATA");
-            }
-            else
-            {
-                JOptionPane.showMessageDialog(this, " Data Is Complete");
-
-                // setFields(EMPTY_STRING);
-
-            }
-        }
-           String n = jTextField1.getText();
+        String n = jTextField1.getText();
         String l = jTextField2.getText();
         String username = jTextField3.getText();
         String title = jTextField4.getText();
         long serv = Long.valueOf(jTextField5.getText());
         String gluten = String.valueOf(jTextField6.getText());
+        String email=jTextField12.getText();
         if(gluten == "yes"){
             isGlutenFree = true;
         }
         else{
             isGlutenFree = false; 
         }
-        float level = Float.valueOf(jTextField7.getText());
+        //getGender();
+        
+        
+            if(jTextField1.getText().equals("") ||jTextField2.getText().equals("") || jTextField3.getText().equals("") || "".equals(jTextField4) || jTextField5.getText().equals("")|| jTextField6.getText().equals("")|| jTextField7.getText().equals("")|| jTextField8.getText().equals("")|| jTextField9.getText().equals("")|| jTextField10.getText().equals("")|| jTextField12.getText().equals("")||jTextField13.getText().equals(""))
+            {
+                JOptionPane.showMessageDialog(this, "INCOMPLETE DATA");
+            }
+            else if(!(email.contains("@"))||!((email.endsWith(".com")) ||(email.endsWith(".edu")))||email.equals(""))
+        {
+            JOptionPane.showMessageDialog(this, "Please Enter Correct Email");
+        }
+            else {
+                JOptionPane.showMessageDialog(this, " Data Is Complete");
         long num_ind = Long.valueOf(jTextField8.getText());
         String categ = jTextField9.getText();
         String des = jTextField10.getText();
@@ -636,6 +634,7 @@ public class RecipeForm extends javax.swing.JFrame {
         contact.setPhone(phone);
         this.chef.setContact(contact);
 
+                float level = Float.valueOf(jTextField7.getText());
         this.chef.setFirstName(n);
         this.chef.setLastName(l);
         this.chef.setUserName(username);
@@ -650,6 +649,13 @@ public class RecipeForm extends javax.swing.JFrame {
         r.setNumber_of_Servings(serv);
         this.chef.setRecipe(r);
         display();
+
+                // setFields(EMPTY_STRING);
+
+            }
+        
+          
+       
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -795,6 +801,11 @@ public class RecipeForm extends javax.swing.JFrame {
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jTextField12KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField12KeyReleased
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_jTextField12KeyReleased
 
      public ImageIcon ResizeImage(String ImagePath)
     {
